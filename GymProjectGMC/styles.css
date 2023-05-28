@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto+Slab:wght@300&display=swap');
+
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles  */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/backgro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header Styles */
+header{
+    background-image: url(./assets/backgro.jpg);  
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-top: 0.5rem solid #ec4141
+;
+    border-bottom: 0.5rem solid #ec4141
+;
+}
+
+/* Navigation Styles */
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100vw;
+   height: 90px;
+   display: flex;
+   padding: 10px;
+}
+nav .logo{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 15%;
+    color: white;
+    height: 5px;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+/* Responsive Styles for Logo */
+@media (max-width: 768px) {
+    .logo {
+      display: flex;
+      flex-direction: column; /* Stack the logo items vertically */
+      align-items: center; /* Align items to the left */
+    }}
+.logo-img{
+    max-height: 50px; /* Adjust the value as per your requirement */
+    margin-right: 10px; /* Add some spacing between the logo and text */   
+}
+nav .logo h1 {
+   font-size: 32px;
+}
+nav .logo h1 span {
+    color: #ec4141 ;
+    margin-left: 1px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height:90px ;
+}
+nav ul a{
+    padding: 0.9rem 1.4rem;
+    margin:0 2px;
+    text-decoration:none ;
+    color: #CBAA97;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase ;
+}
+nav ul a:hover{
+    color: #E5C9BD;
+    border-bottom: 2px solid #DBBFB4 ;
+}
+nav ul li{
+    list-style: none;
+}
+.active{
+    color: #E5C9BD;
+    border-bottom: 2px solid #DBBFB4 ;
+}
+
+/* Header Container Styles */
+.header-container{
+    /* border:1px solid orangered ; */
+    width: 40%;
+    position: relative;
+    top: 25%;
+    left: 2rem;
+    text-align: center;
+}
+.header-container h1{
+    color:#DBBFB4 ;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 29px;
+}
+.header-container h1 .border-bottom{
+    border-bottom: 2px solid #ec4141;
+}
+
+.text-primary{
+    color: #ec4141;
+}
+
+/* Button Styles */
+.btn{
+    padding: 0.7rem 1.5rem;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.btn-primary{
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    background-color: #ec4141;
+    font-weight: 700;
+    color: #DBBFB4;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #ec4141;
+    transition: all 0.5s linear;
+}
+.btn-primary:hover{
+    background-color:transparent ;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #DBBFB4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #888;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .social-icons a:hover {
+    color: #333;
+  }
+  
+  hr {
+    width: 50%;
+    margin: 10px 0;
+  }
+  
+  p {
+    color: #888;
+    font-size: 14px;
+  }
